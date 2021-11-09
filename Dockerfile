@@ -54,6 +54,9 @@ RUN chmod +x /usr/local/bin/sccache
 # Check sccache version
 RUN sccache --version
 
+# Installing libssd-dev. --CUSTOM EDIT
+RUN apk add libressl-dev
+
 # Add scripts
 ADD optimize.sh /usr/local/bin/optimize.sh
 RUN chmod +x /usr/local/bin/optimize.sh

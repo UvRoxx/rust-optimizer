@@ -39,6 +39,9 @@ RUN mv binaryen-version_*/bin/wasm-opt /usr/local/bin
 # Check cargo version
 RUN cargo --version
 
+# Installing libssl-dev --CUSTOM EDIT
+RUN apk add libressl-dev
+
 # Check wasm-opt version
 RUN wasm-opt --version
 
